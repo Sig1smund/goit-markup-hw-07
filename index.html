@@ -64,7 +64,7 @@
               формированию позиции.
               </p>
             </li>
-            <li class="advantages__item>
+            <li class="advantages__item">
               <div class="advantages__logo">
                 <svg width="70" height="70" class="icon-clock">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -102,7 +102,8 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+
+      <section class="section shortened">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <div class="section__container">
           <ul class="examples">
@@ -111,6 +112,7 @@
               src="./images/box 1.jpg"
               width="370"
               alt="Програмист за работой"
+              class="examples__image"
               />
               <p class="examples__discription">Десктопные приложения</p>
             </li>
@@ -119,6 +121,7 @@
               src="./images/box 2.jpg"
               width="370"
               alt="Дизайнер за работой"
+              class="examples__image"
               />
               <p class="examples__discription">Мобильные приложения</p>
             </li>
@@ -127,6 +130,7 @@
               src="./images/box 3.jpg"
               width="370"
               alt="Колорист за работой"
+              class="examples__image"
               />
               <p class="examples__discription">Дизайнерские решения</p>
             </li>
@@ -134,7 +138,7 @@
         </div>
       </section>
 
-      <section class="section--lighten">
+      <section class="section darken">
         <h2 class="section__title">Наша команда</h2>
         <div class="section__container">
           <ul class="team-list">
@@ -314,7 +318,7 @@
                   </li>
                   <li class="social-list__item">
                     <div class="social-container">
-                    <a class="lsocial-container__link" href="#">
+                    <a class="social-container__link" href="#">
                     <svg width="20" height="20" class="icon-twitter">
                       <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
@@ -399,8 +403,8 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-container">
-      <div class="container">
+    <div class="container">
+      <div class="addres-block">
         <a href="/" class="footer-logo">
           <span class="web">Web</span><span class="studio-lighten">Studio</span>
         </a>
@@ -408,45 +412,45 @@
       
         <address>
             <ul class="adress">
-              <li class="physical-adress">г.Киев, пр-т Леси Украинки, 26</li>
-              <li class="adress-link"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="adress-link"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="adress__physical-adress">г.Киев, пр-т Леси Украинки, 26</li>
+              <li class="adress__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="adress__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
       </div>
-      <div class="social-footer">
-        <h2 class="title">Присоединяйтесь</h2>
-                <ul class="footerlinks-list">
-                  <li class="social-footercontainer">
+      <div class="sign-block">
+        <h2 class="sign-block__title">Присоединяйтесь</h2>
+                <ul class="sign-list">
+                  <li class="sign-list__item">
                     
-                    <a class="footerlink" href="#">
+                    <a class="sign-list__link" href="#">
                     <svg width="20" height="20" class="footericon-instagram">
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                     </a>
               
                   </li>
-                  <li class="social-footercontainer">
+                  <li class="sign-list__item">
                     
-                    <a class="footerlink" href="#">
+                    <a class="sign-list__link" href="#">
                     <svg width="20" height="20" class="icon-twitter">
                       <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                     </a>
                   
                   </li>
-                  <li class="social-footercontainer">
+                  <li class="sign-list__item">
                    
-                    <a class="footerlink" href="#">
+                    <a class="sign-list__link" href="#">
                     <svg width="20" height="20" class="icon-facebook">
                       <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                     </a>
                    
                   </li>
-                  <li class="social-footercontainer">
+                  <li class="sign-list__item">
                    
-                    <a class="footerlink" href="#">
+                    <a class="sign-list__link" href="#">
                     <svg width="20" height="20" class="icon-linkedin">
                       <use href="./images/sprite.svg#icon-linkedin"></use>
                     </svg>
@@ -456,11 +460,11 @@
                 </ul>
       </div>
       <div class="sign-container">
-        <h2 class="title">Подпишитесь на рассылку</h2>
+        <h2 class="sign-title">Подпишитесь на рассылку</h2>
         <form class="sign-form">
-          <input type="email" name="email" class="sign-input" id="email" placeholder="E-mail">
+          <input type="email" name="email" class="sign-form__input" id="email" placeholder="E-mail">
           <label for="Email"></label>
-          <button class="footer-button" type="submit">Подписаться
+          <button class="sign-form__button" type="submit">Подписаться
           <span class="send-icon">
             <svg width="24" height="24" class="icon-send">
               <use href="./images/icons.svg#icon-send"></use>
@@ -522,11 +526,7 @@
                 <label class="policy">
                 <input type="checkbox" name="policy" class="field-checkbox__browser" required>
                 
-                <span class="field-checkbox__custom">
-                  <!-- <svg width="16" height="15" class="icon-emptycheckbox">
-                    <use href="./images/icons.svg#icon-emptycheckbox"></use>
-                  </svg> -->
-                </span>
+                <span class="field-checkbox__custom"></span>
                 <span class="field-checkbox__agreement">Соглашаюсь с рассылкой и принимаю 
                 <a href="#" class="field-checkbox__policy-agreement">Условия договора</a></span>
                 </label>

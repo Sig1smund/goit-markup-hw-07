@@ -664,7 +664,7 @@ body button:active {
   margin-right: 30px;
 }
 
-.aadvantages__item:last-child {
+.advantages__item:last-child {
   margin-right: 0px;
 }
 
@@ -688,10 +688,19 @@ body button:active {
 
 /*EXAMPLES*/
 
-/* .examples {
-  padding-top: 94px;
+.section.shortened {
+  padding-top: 0;
   padding-bottom: 94px;
-} */
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
 
 .section__container {
   display: flex;
@@ -717,17 +726,17 @@ body button:active {
   padding: 0;
 }
 
-.eexamples__item {
+.examples__item {
   position: relative;
   margin-right: 30px;
 }
 
-.examples__item > img {
-  display: block;
-}
-
 .examples__item:nth-child(3) {
   margin-right: 0px;
+}
+
+.examples__image {
+  display: block;
 }
 
 .examples__discription {
@@ -759,7 +768,7 @@ body button:active {
 
 /*TEAM*/
 
-.section--lighten {
+.section.darken {
   background-color: #f5f4fa;
 }
 
@@ -970,17 +979,12 @@ body button:active {
 
 /*GALLERY*/
 
-/* .gallery {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
+.gallery__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
+}
 
 /*GALLERY BUTTONS*/
 
@@ -1001,7 +1005,15 @@ body button:active {
   padding-right: 0px;
 }
 
-.filter__buttons .radiobutton {
+.filter__button {
+  margin-right: 8px;
+}
+
+.filter__button:last-child {
+  margin-right: 0px;
+}
+
+.filter__radiobutton {
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -1016,8 +1028,6 @@ body button:active {
   padding-top: 6px;
   padding-bottom: 6px;
 
-  margin-right: 8px;
-
   border-radius: 4px;
   border-width: 2px;
   border-style: hidden;
@@ -1031,9 +1041,9 @@ body button:active {
   transition-timing-function: var(--cubic);
 }
 
-.radiobutton:active,
-.radiobutton:hover,
-.radiobutton:focus {
+.filter__radiobutton:active,
+.filter__radiobutton:hover,
+.filter__radiobutton:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 
@@ -1043,15 +1053,10 @@ body button:active {
   transform: transition;
 }
 
-.filter__btn:last-child {
-  margin-right: 0px;
-}
-
 /*GALLERY PROJECTS*/
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
@@ -1082,7 +1087,7 @@ body button:active {
   margin-bottom: 0px;
 }
 
-.pprojects-list__item:nth-child(3n + 3) {
+.projects-list__item:nth-child(3n + 3) {
   margin-right: 0px;
 }
 
@@ -1182,22 +1187,22 @@ body button:active {
   padding-bottom: 60px;
 }
 
-/* .footer-container {
+.footer > .container {
   display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
+}
 
-.footer .container {
+/* .footer .container {
   display: block;
   width: 270px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 0px;
   margin-right: 70px;
-}
+} */
 
 .footer-logo .studio-lighten {
   font-family: Raleway;
@@ -1208,12 +1213,12 @@ body button:active {
   color: #ffffff;
 }
 
-.footer .adr-container {
-  display: block;
-  width: 1200px;
-  padding-left: 15px;
+.addres-block {
+  display: inline;
+  width: auto;
+  padding: 0;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .adress {
@@ -1222,12 +1227,12 @@ body button:active {
   padding-left: 0px;
 }
 
-.adress a:hover,
-.adress a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--action-color);
 }
 
-.adress .physical-adress {
+.adress__physical-adress {
   font-family: inherit;
   line-height: 1.5;
   text-align: left;
@@ -1239,11 +1244,11 @@ body button:active {
   padding-bottom: 9px;
 }
 
-.adress .adress-link {
+.adress__item {
   padding-bottom: 9px;
 }
 
-.adress .contacts-link {
+.address__link {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
@@ -1257,24 +1262,24 @@ body button:active {
   transition-timing-function: var(--cubic);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--action-color);
 
   transform: transition;
 }
 
-.social-footer {
+.sign-block {
   width: auto;
   padding-bottom: 30px;
-  margin-left: 0px;
+  margin-left: 70px;
   margin-right: 93px;
   margin-top: 12px;
   display: block;
   justify-content: center;
 }
 
-.social-footer .title {
+.sign-block__title {
   display: block;
 
   font-family: Roboto;
@@ -1292,13 +1297,13 @@ body button:active {
   margin-bottom: 20px;
 }
 
-.social-footer .footerlinks-list {
+.sign-list {
   display: flex;
   padding: 0px;
   margin: 0px;
 }
 
-.social-footercontainer {
+.sign-list__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -1308,7 +1313,11 @@ body button:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footerlink {
+.sign-list__item:last-child {
+  margin-right: 0px;
+}
+
+.sign-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1326,12 +1335,8 @@ body button:active {
   transition-timing-function: var(--cubic);
 }
 
-.social-footercontainer:last-child {
-  margin-right: 0px;
-}
-
-.footerlink:hover,
-.footerlink:focus {
+.sign-list__link:hover,
+.sign-list__link:focus {
   fill: var(--background-color);
   background-color: var(--action-color);
 
@@ -1349,7 +1354,7 @@ body button:active {
   align-items: center;
 }
 
-.sign-container .title {
+.sign-title {
   display: block;
 
   font-family: inherit;
@@ -1371,12 +1376,12 @@ body button:active {
   align-items: center;
 }
 
-.sign-form input {
+.sign-form__input {
   position: relative;
   margin-right: 12px;
   padding-left: 16px;
 
-  width: 315px;
+  width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1390,12 +1395,12 @@ body button:active {
   cursor: pointer;
 }
 
-.sign-form input:hover,
-.sign-form input:focus {
+.sign-form__input:hover,
+.sign-form__input:focus {
   border: 1px solid var(--action-color);
 }
 
-.sign-form .footer-button {
+.sign-form__button {
   position: relative;
   width: 200px;
   height: 50px;
@@ -1418,7 +1423,7 @@ body button:active {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.footer-button .icon-send {
+.sign-form__button .icon-send {
   position: absolute;
   right: 15px;
   top: 50%;
