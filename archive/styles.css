@@ -711,11 +711,6 @@ body button:active {
   margin: 0 auto;
 }
 
-/* .works-examples {
-  margin: 0;
-  margin-bottom: 50px;
-} */
-
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -776,15 +771,6 @@ body button:active {
   margin-top: 0px;
   margin-bottom: 50px;
 }
-
-/* .team .container {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-} */
 
 .team-list {
   display: flex;
@@ -903,34 +889,6 @@ body button:active {
 }
 
 /*CLIENTS*/
-
-/* .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
-/* .clients-title {
-  font-family: inherit;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-align: center;
-
-  margin-top: 0px;
-  margin-bottom: 50px;
-  padding: 0px;
-
-  color: var(--primary-text-color);
-} */
-
-/* .clients .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-} */
 
 .clients-list {
   display: flex;
@@ -1194,15 +1152,6 @@ body button:active {
   padding-right: 15px;
   margin: 0 auto;
 }
-
-/* .footer .container {
-  display: block;
-  width: 270px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0px;
-  margin-right: 70px;
-} */
 
 .footer-logo .studio-lighten {
   font-family: Raleway;
