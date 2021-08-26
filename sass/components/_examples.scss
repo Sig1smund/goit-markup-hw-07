@@ -34,11 +34,15 @@
 .examples__item {
   position: relative;
   margin-right: 30px;
+
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
 }
 
-.examples__item:nth-child(3) {
-  margin-right: 0px;
-}
+// .examples__item:nth-child(3) {
+//   margin-right: 0px;
+// }
 
 .examples__image {
   display: block;

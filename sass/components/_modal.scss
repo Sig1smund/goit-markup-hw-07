@@ -19,11 +19,15 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
+  & .modal {
+    transform: scale(0.5) translate(-50%, -50%);
+  }
 }
 
-.backdrop.is-hidden .modal {
-  transform: scale(0.5) translate(-50%, -50%);
-}
+// .backdrop.is-hidden .modal {
+//   transform: scale(0.5) translate(-50%, -50%);
+// }
 
 .modal {
   position: absolute;
@@ -68,13 +72,19 @@
   background-color: $background-color;
 
   transform: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: $action-color;
+  }
 }
 
-.modal__button:hover,
-.modal__button:focus {
-  background-color: rgba(255, 255, 255, 1);
-  color: $action-color;
-}
+// .modal__button:hover,
+// .modal__button:focus {
+//   background-color: rgba(255, 255, 255, 1);
+//   color: $action-color;
+// }
 
 .icon-close {
   fill: currentColor;
@@ -116,11 +126,15 @@
   text-align: left;
 
   margin-bottom: 28px;
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
 }
 
-.form-field:nth-child(5) {
-  margin-bottom: 0;
-}
+// .form-field:nth-child(5) {
+//   margin-bottom: 0;
+// }
 
 .form-field__input {
   position: relative;
@@ -145,12 +159,17 @@
   color: $primary-text-color;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $action-color;
+  }
 }
 
-.form-field__input:hover,
-.form-field__input:focus {
-  border: 1px solid $action-color;
-}
+// .form-field__input:hover,
+// .form-field__input:focus {
+//   border: 1px solid $action-color;
+// }
 
 .form-field__label-name {
   position: absolute;
@@ -207,23 +226,39 @@
 
   color: $primary-text-color;
   cursor: pointer;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $action-color;
+  }
 }
 
-.form-field__text-input::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+// .form-field__text-input::placeholder {
+//   color: rgba(117, 117, 117, 0.5);
 
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
+//   font-family: inherit;
+//   font-size: 12px;
+//   font-weight: 400;
+//   line-height: 1.1;
+//   letter-spacing: 0.01em;
+//   text-align: left;
+// }
 
-.form-field__text-input:hover,
-.form-field__text-input:focus {
-  border-color: $action-color;
-}
+// .form-field__text-input:hover,
+// .form-field__text-input:focus {
+//   border-color: $action-color;
+// }
 
 .field-checkbox {
   position: relative;

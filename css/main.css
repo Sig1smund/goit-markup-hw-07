@@ -288,14 +288,6 @@ body button {
   cursor: pointer;
 }
 
-body a {
-  text-decoration: none;
-}
-
-body a:visited {
-  color: #212121;
-}
-
 body button:hover,
 body button:focus,
 body button:active {
@@ -305,27 +297,21 @@ body button:active {
           transform: background-color;
 }
 
+body a {
+  text-decoration: none;
+}
+
+body a:visited {
+  color: #212121;
+}
+
 .header {
   width: auto;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
-.nav-list,
-.contacts-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-list:hover,
-.nav-list:focus {
-  color: #2196f3;
-  -webkit-transform: transition;
-          transform: transition;
-}
-
-.header > .container {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,6 +322,12 @@ body button:active {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.contacts-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar__logo {
@@ -380,8 +372,13 @@ body button:active {
   color: #212121;
 }
 
-.nav-list__item.current {
-  position: relative;
+.nav-list:hover, .nav-list:focus {
+  color: #2196f3;
+  -webkit-transform: transition;
+          transform: transition;
+}
+
+.nav-list__item {
   margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -389,7 +386,8 @@ body button:active {
   padding-bottom: 34px;
 }
 
-.nav-list__item {
+.nav-list__item.current {
+  position: relative;
   margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -418,7 +416,7 @@ body button:active {
   color: #2196f3;
 }
 
-.nav-list__item.current::after {
+.nav-list__link.current::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -429,8 +427,7 @@ body button:active {
   border-radius: 4px;
 }
 
-.nav-list__link:hover,
-.nav-list__link:focus {
+.nav-list__link:hover, .nav-list__link:focus {
   color: #2196f3;
   -webkit-transform: color;
           transform: color;
@@ -483,8 +480,7 @@ body button:active {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-bar__link:hover,
-.contacts-bar__link:focus {
+.contacts-bar__link:hover, .contacts-bar__link:focus {
   color: #2196f3;
   -webkit-transform: color;
           transform: color;
@@ -630,8 +626,7 @@ body button:active {
           transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button:hover,
-.modal__button:focus {
+.modal__button:hover, .modal__button:focus {
   background-color: white;
   color: #2196f3;
 }
@@ -701,8 +696,7 @@ body button:active {
   cursor: pointer;
 }
 
-.form-field__input:hover,
-.form-field__input:focus {
+.form-field__input:hover, .form-field__input:focus {
   border: 1px solid #2196f3;
 }
 
@@ -801,8 +795,7 @@ body button:active {
   text-align: left;
 }
 
-.form-field__text-input:hover,
-.form-field__text-input:focus {
+.form-field__text-input:hover, .form-field__text-input:focus {
   border-color: #2196f3;
 }
 
@@ -1191,8 +1184,7 @@ body button:active {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-container__link:hover,
-.ssocial-container__link:focus {
+.social-container__link:hover, .social-container__link:focus {
   fill: #ffffff;
   background-color: #2196f3;
   -webkit-transform: transition;
@@ -1239,16 +1231,15 @@ body button:active {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  -webkit-transition-property: fill, background-color;
-  transition-property: fill, background-color;
+  -webkit-transition-property: fill, background-color, border-color;
+  transition-property: fill, background-color, border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__logo:hover,
-.clients-list__logo:focus {
+.clients-list__logo:hover, .clients-list__logo:focus {
   fill: #2196f3;
   border-color: #2196f3;
   background-color: #ffffff;
@@ -1295,11 +1286,6 @@ body button:active {
   padding-left: 0px;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #2196f3;
-}
-
 .adress__physical-adress {
   font-family: inherit;
   line-height: 1.5;
@@ -1331,8 +1317,7 @@ body button:active {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: #2196f3;
   -webkit-transform: transition;
           transform: transition;
@@ -1413,8 +1398,7 @@ body button:active {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sign-list__link:hover,
-.sign-list__link:focus {
+.sign-list__link:hover, .sign-list__link:focus {
   fill: #ffffff;
   background-color: #2196f3;
   -webkit-transform: transition;
@@ -1475,8 +1459,7 @@ body button:active {
   cursor: pointer;
 }
 
-.sign-form__input:hover,
-.sign-form__input:focus {
+.sign-form__input:hover, .sign-form__input:focus {
   border: 1px solid #2196f3;
 }
 
@@ -1580,9 +1563,7 @@ body button:active {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__radiobutton:active,
-.filter__radiobutton:hover,
-.filter__radiobutton:focus {
+.filter__radiobutton:active, .filter__radiobutton:hover, .filter__radiobutton:focus {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: #ffffff;
@@ -1637,11 +1618,17 @@ body button:active {
   margin-right: 0px;
 }
 
-.projects-list__item:hover,
-.projects-list__item:focus {
+.projects-list__item:hover, .projects-list__item:focus {
   background: white;
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.projects-list__item:hover .project-thumb__overlay,
+.projects-list__item:focus .project-thumb__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .project-thumb {
@@ -1683,13 +1670,6 @@ body button:active {
   padding-bottom: 63px;
   margin: 0;
   color: #ffffff;
-}
-
-.projects-list__item:hover .project-thumb__overlay,
-.projects-list__item:focus .project-thumb__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
 }
 
 .title-container {

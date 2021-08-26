@@ -35,10 +35,10 @@
   padding-left: 0px;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: $action-color;
-}
+// .contacts-link:hover,
+// .contacts-link:focus {
+//   color: $action-color;
+// }
 
 .adress__physical-adress {
   font-family: inherit;
@@ -68,14 +68,21 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $action-color;
+
+    transform: transition;
+  }
 }
 
-.address__link:hover,
-.address__link:focus {
-  color: $action-color;
+// .address__link:hover,
+// .address__link:focus {
+//   color: $action-color;
 
-  transform: transition;
-}
+//   transform: transition;
+// }
 
 .sign-block {
   width: auto;
@@ -119,11 +126,15 @@
   align-items: center;
 
   background-color: rgba(255, 255, 255, 0.1);
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-.sign-list__item:last-child {
-  margin-right: 0px;
-}
+// .sign-list__item:last-child {
+//   margin-right: 0px;
+// }
 
 .sign-list__link {
   display: flex;
@@ -141,15 +152,23 @@
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $background-color;
+    background-color: $action-color;
+
+    transform: transition;
+  }
 }
 
-.sign-list__link:hover,
-.sign-list__link:focus {
-  fill: $background-color;
-  background-color: $action-color;
+// .sign-list__link:hover,
+// .sign-list__link:focus {
+//   fill: $background-color;
+//   background-color: $action-color;
 
-  transform: transition;
-}
+//   transform: transition;
+// }
 
 .sign-container {
   width: auto;
@@ -201,12 +220,17 @@
   transition: border 250ms $cubic;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $action-color;
+  }
 }
 
-.sign-form__input:hover,
-.sign-form__input:focus {
-  border: 1px solid $action-color;
-}
+// .sign-form__input:hover,
+// .sign-form__input:focus {
+//   border: 1px solid $action-color;
+// }
 
 .sign-form__button {
   position: relative;
@@ -229,12 +253,20 @@
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  & .icon-send {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $background-color;
+  }
 }
 
-.sign-form__button .icon-send {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  fill: $background-color;
-}
+// .sign-form__button .icon-send {
+//   position: absolute;
+//   right: 15px;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   fill: $background-color;
+// }
