@@ -365,6 +365,9 @@ body a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 95px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -382,8 +385,6 @@ body a:visited {
   margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 34px;
-  padding-bottom: 34px;
 }
 
 .nav-list__item.current {
@@ -404,6 +405,8 @@ body a:visited {
   line-height: 1.1;
   letter-spacing: 0.02em;
   font-weight: 500;
+  padding-top: 34px;
+  padding-bottom: 34px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -472,6 +475,8 @@ body a:visited {
   text-align: left;
   font-size: 14px;
   color: #757575;
+  padding-top: 34px;
+  padding-bottom: 34px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;

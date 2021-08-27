@@ -140,6 +140,7 @@ body {
 
 .nav-list {
   display: flex;
+  align-items: center;
 
   margin-left: 95px;
   margin-top: 0px;
@@ -169,8 +170,6 @@ body {
   margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 34px;
-  padding-bottom: 34px;
 
   &.current {
     position: relative;
@@ -195,6 +194,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  padding-top: 34px;
+  padding-bottom: 34px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -289,6 +291,9 @@ body {
   text-align: left;
   font-size: 14px;
   color: $secondary-text-color;
+
+  padding-top: 34px;
+  padding-bottom: 34px;
 
   transition-property: color;
   transition-duration: 250ms;
