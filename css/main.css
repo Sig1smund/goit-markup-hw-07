@@ -1257,6 +1257,9 @@ body a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1325,10 +1328,8 @@ body a:visited {
 
 .sign-block {
   width: auto;
-  padding-bottom: 30px;
   margin-left: 70px;
   margin-right: 93px;
-  margin-top: 12px;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1407,10 +1408,8 @@ body a:visited {
 
 .sign-container {
   width: auto;
-  padding-bottom: 30px;
   margin-left: 0px;
   margin-right: auto;
-  margin-top: 12px;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1618,8 +1617,14 @@ body a:visited {
   margin-right: 0px;
 }
 
-.projects-list__item:hover, .projects-list__item:focus {
-  background: white;
+.projects-list__item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-list__item a:hover,
+.projects-list__item a:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }

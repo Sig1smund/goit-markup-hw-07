@@ -125,12 +125,23 @@
     margin-right: 0px;
   }
 
-  &:hover,
-  &:focus {
-    background: rgba(255, 255, 255, 1);
+  & a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & a:hover,
+  & a:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
+
+  // &:hover,
+  // &:focus {
+  //   background: rgba(255, 255, 255, 1);
+  //   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  //     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
   &:hover .project-thumb__overlay,
   &:focus .project-thumb__overlay {

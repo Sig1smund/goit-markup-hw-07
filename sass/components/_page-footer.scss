@@ -6,6 +6,7 @@
 
 .footer > .container {
   display: flex;
+  align-items: baseline;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -86,10 +87,10 @@
 
 .sign-block {
   width: auto;
-  padding-bottom: 30px;
+
   margin-left: 70px;
   margin-right: 93px;
-  margin-top: 12px;
+
   display: block;
   justify-content: center;
 }
@@ -172,10 +173,10 @@
 
 .sign-container {
   width: auto;
-  padding-bottom: 30px;
+
   margin-left: 0px;
   margin-right: auto;
-  margin-top: 12px;
+
   display: block;
   justify-content: center;
   align-items: center;
