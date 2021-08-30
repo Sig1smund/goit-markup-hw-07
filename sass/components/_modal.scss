@@ -68,14 +68,20 @@
 
   fill: #000000;
   color: #000000;
-  background-color: $background-color;
+  background-color: transparent;
 
-  transform: color 250ms $cubic;
+  transition: fill 250ms $cubic, color 250ms $cubic;
+
+  cursor: pointer;
 
   &:hover,
-  &:focus {
-    background-color: rgba(255, 255, 255, 1);
+  &:focus,
+  &:active {
+    // background-color: rgba(255, 255, 255, 1);
+    fill: $action-color;
     color: $action-color;
+
+    transform: transition;
   }
 }
 
@@ -85,9 +91,9 @@
 //   color: $action-color;
 // }
 
-.icon-close {
-  fill: currentColor;
-}
+// .icon-close {
+//   fill: currentColor;
+// }
 
 .modal-form__container {
   display: flex;
@@ -110,7 +116,7 @@
   color: $primary-text-color;
 
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .form-field {
@@ -141,6 +147,7 @@
   height: 40px;
 
   padding-left: 42px;
+  margin-top: 4px;
 
   border-radius: 4px;
 
@@ -172,9 +179,9 @@
 // }
 
 .form-field__label-name {
-  position: absolute;
-  top: -15px;
-  left: 0;
+  // position: absolute;
+  // top: -15px;
+  // left: 0;
 
   color: rgba(117, 117, 117, 1);
 
@@ -189,7 +196,7 @@
 .form-field__label-icon {
   position: absolute;
   left: 12px;
-  top: 14px;
+  top: 30px;
 
   fill: rgba(33, 33, 33, 1);
 
@@ -204,6 +211,7 @@
 }
 
 .form-field__text-input {
+  margin-top: 4px;
   padding-top: 12px;
   padding-left: 12px;
 
@@ -333,6 +341,10 @@
 .field-checkbox__policy-agreement {
   text-decoration: underline;
   color: $action-color;
+
+  &:visited {
+    color: $action-color;
+  }
 }
 
 .modal-form__submit-button {

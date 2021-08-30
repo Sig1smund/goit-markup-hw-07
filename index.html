@@ -509,6 +509,7 @@
               Оставьте свои данные, мы вам перезвоним
             </h2>
             <label class="form-field">
+              <span class="form-field__label-name">Имя</span>
               <input
                 type="text"
                 name="name"
@@ -516,7 +517,6 @@
                 autocomplete="off"
                 required
               />
-              <span class="form-field__label-name">Имя</span>
               <span class="form-field__label-icon">
                 <svg width="12" height="12">
                   <use href="./images/icons.svg#icon-Vector"></use>
@@ -524,6 +524,7 @@
               </span>
             </label>
             <label class="form-field">
+              <span class="form-field__label-name">Телефон</span>
               <input
                 type="tel"
                 name="tel"
@@ -531,7 +532,6 @@
                 autocomplete="off"
                 required
               />
-              <span class="form-field__label-name">Телефон</span>
               <span class="form-field__label-icon">
                 <svg width="13" height="13">
                   <use href="./images/icons.svg#icon-phone"></use>
@@ -539,6 +539,7 @@
               </span>
             </label>
             <label class="form-field">
+              <span class="form-field__label-name">Почта</span>
               <input
                 type="email"
                 name="email"
@@ -546,7 +547,6 @@
                 autocomplete="off"
                 required
               />
-              <span class="form-field__label-name">Почта</span>
               <span class="form-field__label-icon">
                 <svg width="15" height="12">
                   <use href="./images/icons.svg#icon-mail"></use>
@@ -554,12 +554,12 @@
               </span>
             </label>
             <label class="form-field">
+              <span class="form-field__label-name">Комментарий</span>
               <textarea
                 name="comment"
                 class="form-field__text-input"
                 placeholder="Введите текст"
               ></textarea>
-              <span class="form-field__label-name">Комментарий</span>
             </label>
             <div class="field-checkbox">
               <label class="policy">
@@ -570,18 +570,18 @@
                   required
                 />
                 <span class="field-checkbox__custom"></span>
-                <span class="field-checkbox__agreement"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="field-checkbox__policy-agreement"
-                    >Условия договора</a
-                  ></span
-                >
+                <span class="field-checkbox__agreement">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#" class="field-checkbox__policy-agreement">
+                    Условия договора
+                  </a>
+                </span>
               </label>
             </div>
+            <button type="submit" class="modal-form__submit-button">
+              Отправить
+            </button>
           </div>
-          <button type="submit" class="modal-form__submit-button">
-            Отправить
-          </button>
         </form>
       </div>
     </div>

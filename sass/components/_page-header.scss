@@ -11,27 +11,27 @@ body {
     list-style: none;
   }
 
-  & button {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-    text-align: center;
-    font-family: inherit;
-    background-color: #f5f4faa1;
-    color: #212121;
-    cursor: pointer;
-  }
+  // & button {
+  //   font-size: 16px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 1.4;
+  //   letter-spacing: 0.03em;
+  //   text-align: center;
+  //   font-family: inherit;
+  //   background-color: #f5f4faa1;
+  //   color: #212121;
+  //   cursor: pointer;
+  // }
 
-  & button:hover,
-  & button:focus,
-  & button:active {
-    background-color: #2196f3;
-    color: #ffffff;
+  // & button:hover,
+  // & button:focus,
+  // & button:active {
+  //   background-color: #2196f3;
+  //   color: #ffffff;
 
-    transform: background-color;
-  }
+  //   transform: background-color;
+  // }
 
   & a {
     text-decoration: none;
