@@ -332,6 +332,8 @@ body a:visited {
 
 .navbar__logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .web {
@@ -405,8 +407,8 @@ body a:visited {
   line-height: 1.1;
   letter-spacing: 0.02em;
   font-weight: 500;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -422,7 +424,7 @@ body a:visited {
 .nav-list__link.current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1.3px;
   content: "";
   width: 100%;
   height: 4px;
@@ -475,8 +477,8 @@ body a:visited {
   text-align: left;
   font-size: 14px;
   color: #757575;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -578,7 +580,6 @@ body a:visited {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -703,6 +704,7 @@ body a:visited {
 
 .form-field__input:hover, .form-field__input:focus {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .form-field__label-name {
@@ -802,6 +804,7 @@ body a:visited {
 
 .form-field__text-input:hover, .form-field__text-input:focus {
   border-color: #2196f3;
+  outline: none;
 }
 
 .field-checkbox {
@@ -1396,8 +1399,8 @@ body a:visited {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  -webkit-transition-property: fill, background-color;
-  transition-property: fill, background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1465,6 +1468,7 @@ body a:visited {
 
 .sign-form__input:hover, .sign-form__input:focus {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .sign-form__button {

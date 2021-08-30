@@ -150,7 +150,7 @@
 
   border-radius: 50%;
 
-  transition-property: fill, background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
@@ -225,6 +225,7 @@
   &:hover,
   &:focus {
     border: 1px solid $action-color;
+    outline: none;
   }
 }
 

@@ -113,6 +113,8 @@ body {
 
 .navbar__logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .web {
@@ -195,8 +197,8 @@ body {
   letter-spacing: 0.02em;
   font-weight: 500;
 
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -209,7 +211,7 @@ body {
   &.current::after {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1.3px;
 
     content: "";
 
@@ -292,8 +294,8 @@ body {
   font-size: 14px;
   color: $secondary-text-color;
 
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   transition-property: color;
   transition-duration: 250ms;
